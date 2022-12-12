@@ -1,0 +1,228 @@
+/* Зададим переменню на цвет текста */
+:root {
+--primary-background-color: #FFFFFF;
+--hero-footer-background-color: #2F303A;
+--second-background-color: #F5F4FA;
+--white-text-color: #FFFFFF;
+--primary-text-color: #757575;
+--primary-header-logo: #000000;
+--primary-title-color: #212121;
+--accentt-color: #2196F3;
+}
+body {
+    background-color: var(--primary-background-color);
+    color: var(--primary-text-color);
+    font-family: Roboto, sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* Добавим общий стиль на списки, кнопки*/
+.list {
+    list-style: none;
+}
+/* По умолчанию кнопки не унаследуют шрифт от предков
+по этому ставим кнопке font-family: inherit; (явно унаследуй что-то) */
+button {
+    font-family: inherit;
+}
+
+/* Логотип хедера */
+.header-logo {
+    color:var(--primary-header-logo) ;
+    text-decoration: none;
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+.header-logo .accent {
+    color: var(--accentt-color);
+}
+
+/* Навигация */
+.link-nav {
+    text-decoration: none;
+    color: var(--primary-title-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.link-nav:visited {
+    color: var(--primary-title-color);
+}
+.link-nav:hover,
+.link-nav:focus {
+    color: var(--accentt-color);
+}
+.site-nav .link-nav.current{
+    color: var(--accentt-color);
+}
+
+/* Контакты */
+.link-contacts {
+    text-decoration: none;
+    color: var(--primary-text-color);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+}
+.link-contacts:visited {
+    color: var(--primary-text-color);
+}
+.link-contacts:hover,
+.link-contacts:focus {
+    color: var(--accentt-color);
+}
+
+/* Уникальный контент страницы MAIN */
+.main {
+    background-color: var(--primary-background-color);
+}
+
+/* Секция "Герой" */
+.hero {
+    background-color: var(--hero-footer-background-color);
+}
+.hero .title {
+    color: var(--white-text-color);
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.hero-button {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 0.06em;
+    color: var(--white-text-color);
+    background-color:  var(--accentt-color);
+    cursor: pointer
+}
+
+/*Скрываем нужные заголовки */
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden ;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+}
+
+/* Секция "Подход к работе" */
+.approach .title {
+    color: var(--primary-title-color);
+    font-size: 14px;
+    line-height: 1.14;
+    text-transform: uppercase;
+}
+.approach .text {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* Секция Заголовок "Область занятий", Команда */
+.area-​​work .title,
+.teem .title {
+    color: var(--primary-title-color);
+    font-size: 36px;
+    line-height: 1.17;
+    text-align: center;
+}
+/* Секция "Команда" */
+.teem {
+    background-color: var(--second-background-color);
+}
+.card{
+    background-color: var(--primary-background-color);
+}
+.teem .name {
+    color: var(--primary-title-color);
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+.teem .text {
+    color:var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.19;
+    text-align: center;
+}
+
+/* Футер */
+.footer {
+    background-color: var(--hero-footer-background-color);
+}
+.footer-logo {
+    font-family: Raleway, sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    color: var(--white-text-color);
+    text-decoration: none;
+}
+.footer-logo .accent {
+    color: var(--accentt-color);
+}
+.footer .address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+.footer .address-link {
+    text-decoration: none;
+    color: var(--white-text-color);
+}
+.footer .contacts-link {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.6);
+}
+.footer .contacts-link:hover,
+.footer .contacts-link:focus {
+    color: var(--accentt-color);
+}
+
+/* Страница ПОРТФОЛИО секция проекты */
+.projects-button {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    color: var(--primary-title-color);
+    background-color: var(--second-background-color);
+    cursor: pointer
+}
+.projects-button:hover,
+.projects-button:focus {
+    color: var(--white-text-color);
+    background-color:  var(--accentt-color);
+}
+
+.projects .link {
+    text-decoration: none;
+}
+.projects .title {
+    color: var(--primary-title-color);
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+.projects .text {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    line-height: 1.87;
+}
+
