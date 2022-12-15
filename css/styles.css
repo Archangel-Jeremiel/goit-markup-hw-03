@@ -203,7 +203,8 @@ button {
     text-align: center;
     color: var(--primary-title-color);
     background-color: var(--second-background-color);
-    cursor: pointer
+    cursor: pointer;
+    letter-spacing: 0.03em;
 }
 .projects-button:hover,
 .projects-button:focus {
